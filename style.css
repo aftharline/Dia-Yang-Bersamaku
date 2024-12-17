@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(270deg, #ffecec, #ffffff);
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* height: 100vh; */
+}
+
+/* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 123, 148); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 100, 100); /* Color of the thumb on hover */
+}
+
+/* Custom Scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(255, 123, 148) rgba(0, 0, 0, 0.1); /* thumb color and track color */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#title1 {
+    font-family: poppins;
+    font-weight: bold;
+}
+
+#title2 {
+    font-family: poppins;
+    font-weight: 600;
+}
+
+#title3 {
+    font-family: poppins;
+    font-weight: 500;
+}
+
+/* heaeder */
+
+        /* Card Hover Effect */
+        .card {
+            transition: transform 1s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navbar Hover Effect */
+        .navbar-item {
+            transition: background-color 0.3s;
+        }
+
+        .navbar-item:hover {
+            background-color: rgba(0, 0, 0, 0.272); /* Lighten the background on hover */
+        }
+
+#header {
+    height: 7rem;
+}
+
+
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(87, 37, 52);
+    /* color: gold; */
+    text-align: center;
+  }
